@@ -8,18 +8,6 @@ unexpected happens.
 Instead of stopping execution, Python can catch the error and
 handle it gracefully.
 
-Topics covered:
-
-1. What is an Exception?
-2. try
-3. except
-4. else
-5. finally
-6. Multiple exceptions
-7. Common exceptions
-8. Raising exceptions
-9. Custom exceptions (basic)
-10. Practical Data Engineering examples
 """
 
 
