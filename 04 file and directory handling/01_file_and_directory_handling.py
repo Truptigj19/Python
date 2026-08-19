@@ -546,8 +546,12 @@ path = Path("data/sales.csv")
 
 
 # This is a relative path.
+# Starting from where I am currently working, 
+# go into data, then find sales.csv.
 
 # It is relative to the current working directory.
+# That's called a relative path because 
+# you're giving the location relative to your current location.
 
 
 # ============================================================
@@ -561,6 +565,7 @@ print(path.absolute())
 
 
 # This gives an absolute path.
+# An absolute path gives the complete address from the beginning.
 
 
 # ============================================================
@@ -1330,7 +1335,7 @@ processing_date = date.today()
 
 file_name = (
     f"sales_"
-    f"{processing_date.strftime('%Y%m%d')}"
+    f"{processing_date.strftime('m%%Y%d')}"
     f".csv"
 )
 
@@ -1686,243 +1691,3 @@ if path.exists():
 #     before processing them.
 
 
-# ============================================================
-# 77. Quick Revision Table
-# ============================================================
-
-# Operation                    Function / Method
-#
-# Open file                    open()
-#
-# Recommended file handling    with open()
-#
-# Read complete file           read()
-#
-# Read one line                readline()
-#
-# Read all lines               readlines()
-#
-# Write                        write()
-#
-# Append                       "a"
-#
-# Check path                   exists()
-#
-# Check file                   is_file()
-#
-# Check directory              is_dir()
-#
-# Create directory             mkdir()
-#
-# List directory               iterdir()
-#
-# Current directory            Path.cwd()
-#
-# File name                   .name
-#
-# File without extension      .stem
-#
-# Extension                   .suffix
-#
-# Parent directory            .parent
-#
-# Read JSON                    json.load()
-#
-# Write JSON                   json.dump()
-#
-# JSON string -> Python        json.loads()
-#
-# Python -> JSON string        json.dumps()
-#
-# Read Parquet                 pd.read_parquet()
-#
-# Write Parquet                df.to_parquet()
-
-
-# ============================================================
-# 78. CSV vs JSON vs Parquet
-# ============================================================
-
-# CSV
-#
-# Use when:
-# - Data is tabular
-# - Simplicity is important
-# - Human readability is useful
-
-
-# JSON
-#
-# Use when:
-# - Working with APIs
-# - Data is nested
-# - Data exchange is required
-
-
-# Parquet
-#
-# Use when:
-# - Working with large datasets
-# - Analytical processing is required
-# - Efficient storage is important
-# - Working in Data Engineering pipelines
-
-
-# ============================================================
-# 79. PRACTICE QUESTIONS
-# ============================================================
-
-# Practice 1:
-# Create a text file using with open()
-# and write 5 lines into it.
-
-
-# Practice 2:
-# Read the complete file using read().
-
-
-# Practice 3:
-# Read the file line-by-line.
-
-
-# Practice 4:
-# Append a new line to the file.
-
-
-# Practice 5:
-# Create a Path object for:
-#
-# data/sales.csv
-
-
-# Practice 6:
-# Print:
-#
-# - file name
-# - stem
-# - suffix
-# - parent directory
-
-
-# Practice 7:
-# Check whether:
-#
-# data/sales.csv
-#
-# exists.
-
-
-# Practice 8:
-# Check whether a given path
-# is a file or directory.
-
-
-# Practice 9:
-# Create:
-#
-# data/raw
-# data/processed
-# data/output
-
-
-# Practice 10:
-# List all files inside
-# the data directory.
-
-
-# Practice 11:
-# List only CSV files.
-
-
-# Practice 12:
-# Create a CSV file containing:
-#
-# id
-# name
-# salary
-
-
-# Practice 13:
-# Read the CSV using csv.reader.
-
-
-# Practice 14:
-# Read the same CSV using DictReader.
-
-
-# Practice 15:
-# Create a JSON file containing:
-#
-# name
-# age
-# skills
-
-
-# Practice 16:
-# Read the JSON file using json.load().
-
-
-# Practice 17:
-# Convert a Python dictionary
-# into a JSON string using json.dumps().
-
-
-# Practice 18:
-# Convert a JSON string back into
-# a Python dictionary using json.loads().
-
-
-# Practice 19:
-# Create a pandas DataFrame
-# and save it as Parquet.
-
-
-# Practice 20:
-# Read the Parquet file using pandas.
-
-
-# Practice 21:
-# Explain the difference between:
-#
-# CSV
-# JSON
-# Parquet
-
-
-# Practice 22:
-# Build a small workflow:
-#
-# data/raw/sales.csv
-#       ↓
-# Read CSV
-#       ↓
-# Remove duplicate records
-#       ↓
-# Save:
-# data/processed/sales.parquet
-
-
-# Practice 23:
-# Check whether the input file exists
-# before processing it.
-
-
-# Practice 24:
-# Create a date-based output filename:
-#
-# sales_YYYYMMDD.csv
-
-
-# Practice 25:
-# Create this directory structure
-# using pathlib:
-#
-# data/
-# ├── raw/
-# ├── processed/
-# └── output/
-
-
-# ============================================================
-# END OF FILE & DIRECTORY HANDLING
-# ============================================================
