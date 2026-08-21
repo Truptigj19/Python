@@ -18,20 +18,7 @@ Logging helps us:
 - Record warnings
 - Keep execution history
 
-Topics covered:
 
-1. What is logging?
-2. Why logging is important
-3. logging module
-4. DEBUG
-5. INFO
-6. WARNING
-7. ERROR
-8. CRITICAL
-9. Basic log formatting
-10. Replacing print()
-11. Logging exceptions
-12. Practical Data Engineering examples
 """
 
 

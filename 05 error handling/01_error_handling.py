@@ -534,15 +534,3 @@ except ValueError as error:
 # Prefer specific exceptions over generic Exception.
 
 
-# ============================================================
-# 31. Practice Questions
-# ============================================================
-
-# 1. Handle division by zero.
-# 2. Catch ValueError when converting input.
-# 3. Read a file safely.
-# 4. Raise an error for negative salary.
-# 5. Create a custom exception for invalid email.
-# 6. Build a function that validates CSV file existence.
-# 7. Handle both JSONDecodeError and FileNotFoundError.
-# 8. Create a safe ETL function using try/except/finally.
