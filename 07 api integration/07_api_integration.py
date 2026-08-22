@@ -325,11 +325,12 @@ response = requests.post(
 
 # For APIs expecting JSON:
 
+'''
 requests.post(
     url,
     json=user_data
 )
-
+'''
 
 # data= can be used for form data or other
 # body formats depending on the API.
